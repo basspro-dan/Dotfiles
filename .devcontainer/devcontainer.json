@@ -1,0 +1,14 @@
+{
+    "name": "Standard Development Container",
+    "build": {
+        "dockerfile": "files/Dockerfile"
+    },
+      "customizations": {
+        "vscode": {
+          "extensions": [
+            "HashiCorp.terraform",
+            "ms-azuretools.vscode-containers"
+      ]
+    }
+  }
+}

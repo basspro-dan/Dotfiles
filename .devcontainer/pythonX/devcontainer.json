@@ -1,0 +1,21 @@
+{
+    "name": "Xtended Development Container",
+    "build": {
+        "dockerfile": "../files/Dockerfile"
+    },
+    "containerUser": "vscode",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install -r ../files/requirements.txt"
+}
