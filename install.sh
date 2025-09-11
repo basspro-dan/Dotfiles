@@ -38,13 +38,15 @@ cp ~/Dotfiles/DotFiles/gitconfig ~/.gitconfig
 [[ -e ~/bin ]] && rm -rf ~/bin
 ln -s ~/Dotfiles/Bin ~/Bin
 
+source  ~/.bashrc
+
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 pyenv install 3.11.5
 pyenv global 3.11.5 
 pip3 install psutil
 
 
-source  ~/.bashrc
+
 
 ## Add Compile Function for cmatrix and nmon
 ## Add to Bashrc : Check for code changes to push everyting you login. 
