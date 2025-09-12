@@ -6,6 +6,7 @@
 ## Remove .gitconfig -> Link to gitcomfig in Cli-foo
 ## Linx ~/Dotfiles/Bin -> ~/bin folder and copy 
 
+touch ~/.edgerc
 echo "${{ secrets.DOTEDGERC }}" > ~/.edgerc
 # aka_client_secret="client_secret="${{ aka_client_secret }} ; echo $aka_client_secret >> ~/.edgerc
 
