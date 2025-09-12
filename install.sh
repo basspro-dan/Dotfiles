@@ -40,10 +40,10 @@ ln -s ~/Dotfiles/Bin ~/Bin
 
 source  ~/.bashrc
 
-curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-pyenv install 3.11.5
-pyenv global 3.11.5 
-pip3 install psutil
+# curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+# pyenv install 3.11.5
+# pyenv global 3.11.5 
+# pip3 install psutil
 
 
 
