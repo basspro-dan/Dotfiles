@@ -7,7 +7,8 @@
 ## Linx ~/Dotfiles/Bin -> ~/bin folder and copy 
 
 touch ~/.edgerc
-echo "${{ secrets.DOTEDGERC }}" > ~/.edgerc
+echo ${{ secrets.DOTEDGERC }} > ~/.edgerc
+cat ~/.edgerc
 # aka_client_secret="client_secret="${{ aka_client_secret }} ; echo $aka_client_secret >> ~/.edgerc
 
 #client_secret=$(env | grep 'client_secret' | gawk -F= '{print $3}') && echo "client_secret="$client_secret"=" >> ~/.edgerc
