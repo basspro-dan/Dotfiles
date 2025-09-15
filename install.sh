@@ -7,8 +7,7 @@
 ## Linx ~/Dotfiles/Bin -> ~/bin folder and copy 
 
 
-echo "[default]
- " > ~/.edgerc
+echo "[default]" > ~/.edgerc
 
 client_secret=$(env | grep 'client_secret' | gawk -F= '{print $3}') && echo "client_secret="$client_secret"=" >> ~/.edgerc
 host=$(env | grep 'host' | gawk -F= '{print $2}') && echo "host="$host >> ~/.edgerc
