@@ -6,17 +6,16 @@
 ## Remove .gitconfig -> Link to gitcomfig in Cli-foo
 ## Linx ~/Dotfiles/Bin -> ~/bin folder and copy 
 
-touch ~/.edgerc
-# echo ${{ secrets.DOTEDGERC }} > ~/.edgerc
-# cat ~/.edgerc
 
-echo "${{ secrets.EDGERC }}" > ~/.edgerc
+echo "[default]
+" > ~/.edgerc
+
 # aka_client_secret="client_secret="${{ aka_client_secret }} ; echo $aka_client_secret >> ~/.edgerc
 
-#client_secret=$(env | grep 'client_secret' | gawk -F= '{print $3}') && echo "client_secret="$client_secret"=" >> ~/.edgerc
-#host=$(env | grep 'host' | gawk -F= '{print $2}') && echo "host="$host >> ~/.edgerc
-#access_token=$(env | grep 'access_token' | gawk -F= '{print $2}') && echo "access_token="$access_token >> ~/.edgerc
-#client_token=$(env | grep 'client_token' | gawk -F= '{print $2}') && echo "client_token="$client_token >> ~/.edgerc
+client_secret=$(env | grep 'client_secret' | gawk -F= '{print $3}') && echo "client_secret="$client_secret"=" >> ~/.edgerc
+host=$(env | grep 'host' | gawk -F= '{print $2}') && echo "host="$host >> ~/.edgerc
+access_token=$(env | grep 'access_token' | gawk -F= '{print $2}') && echo "access_token="$access_token >> ~/.edgerc
+client_token=$(env | grep 'client_token' | gawk -F= '{print $2}') && echo "client_token="$client_token >> ~/.edgerc
 
 # Todo: Figure this out for .edgerc. 
 # client_secret: ${{ secrets.client_secret }}
