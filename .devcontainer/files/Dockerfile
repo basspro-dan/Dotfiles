@@ -37,7 +37,8 @@ RUN sh -c 'echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/key
 RUN apt-get update && apt-get install -y gh
 
 # Install Pyenv, configure for the latest stable 3 version for now.
-RUN curl https://pyenv.run | bash
+# RUN curl https://pyenv.run | bash ## Moved it to the dotfile. 
+
 
 # Install TFswitch
 RUN curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/master/install.sh | bash
