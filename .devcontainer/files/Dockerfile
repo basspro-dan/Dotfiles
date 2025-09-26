@@ -49,7 +49,7 @@ RUN curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/mast
 WORKDIR /usr/local/bin
 RUN wget https://github.com/akamai/cli/releases/download/v2.0.1/akamai-v2.0.1-linuxamd64 -O akamai
 RUN chmod +x /usr/local/bin/akamai
-RUN akamai install dns
+RUN akamai install dns terraform
 
 
 # Return us to our home folder
