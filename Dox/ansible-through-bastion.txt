@@ -1,0 +1,12 @@
+
+## SSH :
+ ssh -o ProxyCommand="ssh -W %h:%p ansible_bastion@jump -i ~/.ssh/ansible_bastion/id_rsa" danibaker@srvcswnexed01 
+ ssh -o ProxyCommand="ssh -W %h:%p ansible_bastion@jump -i ~/.ssh/ansible_bastion/id_rsa" danibaker@srvcsanexed01
+
+Pr0xyComm@nd
+
+## Ansible :
+ansible -i new-basspro_inventory bpdev -m ping
+
+
+

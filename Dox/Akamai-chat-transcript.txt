@@ -1,0 +1,172 @@
+﻿Niraj Kumar (10/8/2025, 10:23:39 AM): Thank you for contacting Akamai Business Support. You are now connected to Niraj Kumar. 
+Me (10/8/2025, 10:23:46 AM): Good Moring. :) 
+Me (10/8/2025, 10:23:56 AM): Morning* even. :) 
+Niraj Kumar (10/8/2025, 10:24:14 AM): HI Daniel, Good morning! , Hope you are doing well 
+Me (10/8/2025, 10:24:31 AM): I am, and hope the same for you. :) 
+Niraj Kumar (10/8/2025, 10:25:38 AM): I am also doing great, As I understand, you want to know where we configure alerts for EDNS 
+Me (10/8/2025, 10:25:50 AM): Edge DNS
+
+Yes 
+Niraj Kumar (10/8/2025, 10:26:33 AM): Yes for the Edge DNS 
+Me (10/8/2025, 10:26:43 AM): yes. :) 
+Me (10/8/2025, 10:27:13 AM): I don't want to create one, I just need to remove one. 
+Niraj Kumar (10/8/2025, 10:27:57 AM): Ok so the email is already configured. Please confirm the account name is Bass Pro, LLC 
+Me (10/8/2025, 10:28:46 AM): Yes. Don't change anything just yet though. I just need to know where the panel is to make changes to existing email alerts. 
+Me (10/8/2025, 10:29:13 AM): Example email: 
+
+'TYPE OF EVENT:   Edit Primary DNS Zone Record
+APPLICATION:     Edge DNS
+TIME:            Tue, 7 Oct 2025 18:19:56 UTC' 
+Niraj Kumar (10/8/2025, 10:30:57 AM): Thank you for sharing the email sample. The email example you have shared is related to the changes in the Edge DNS zone. 
+Me (10/8/2025, 10:31:43 AM): I am aware... 
+How do I get to the page where these kind of alerts can be altered? 
+Niraj Kumar (10/8/2025, 10:32:58 AM): Please allow me some time to confirm. 
+Me (10/8/2025, 10:33:04 AM): Ok. 
+Me (10/8/2025, 10:36:56 AM): Ok. 
+Niraj Kumar (10/8/2025, 10:38:14 AM): Danial, please allow me some time I am checking on it. Also could you confirm the email ID where you received this alert and the zone name 
+Me (10/8/2025, 10:39:57 AM): Standby. 
+Me (10/8/2025, 10:41:47 AM): My email client is not giving up the sent to address because I have a filter. Give me a moment to find it please. 
+Niraj Kumar (10/8/2025, 10:42:10 AM): Sure 
+Me (10/8/2025, 10:43:36 AM): This might help in the meantime. the alerts are sent to a distribution list. 
+
+DATA:
+    event_definition_id:     667443
+    event_time:              1759870088757
+    event_uuid:              ec023eff-5a2a-469d-97d0-85743bf3267d
+    host_ip:                 https://urldefense.com/v3/__http://10.0.6.181__;!!N4fOi5Mv!cX4MSYJqIc-vfeJSMMSKhipjEpIsf3cY1yyNjc4ulof_pweEu722b2pIELnvqmlRM5qmVQ8aaXXReiRXTQP5$
+    host_name:               authoritative-dns-5fcc5c78c6-rrpkp
+    portal_username:         ronewton@basspro.com
+    pulsar_host:             localhost
+    VersionId:               5bff2602-1680-4516-8c0e-3975f8c8c83b
+    Zone:                    http://basspro.com
+    ZoneId:                  345502 
+Me (10/8/2025, 10:44:57 AM): Message-ID: <2118930041.7307.1759870144796@5921463c2dbf>
+S 
+Niraj Kumar (10/8/2025, 10:45:50 AM): Thank you for the information. Please allow me sometime to check 
+Me (10/8/2025, 10:46:00 AM): Zone name is big-cedar.com 
+Niraj Kumar (10/8/2025, 10:46:17 AM): I see the zone as Zone: http://basspro.com 
+Me (10/8/2025, 10:46:33 AM): True, I was thinking of another alert. You are correct. 
+Niraj Kumar (10/8/2025, 10:47:14 AM): Thank you for confirming! I am checking, please allow me some time 
+Me (10/8/2025, 10:47:36 AM): :Thumb: 
+Me (10/8/2025, 10:47:47 AM): :thumbs-up: 
+Me (10/8/2025, 10:47:52 AM): lol ok. 
+Niraj Kumar (10/8/2025, 10:57:25 AM): Thank you for your patience, Danial. I didn't find any option specific to the EDNS zone activation alerts. I see there is an alert "General Notifications (previously called 24x7) contacts" under the Identity and Access Management > Escalation Contacts, but not completely sure if the emails configured here will also get the EDNS zone activation alerts as well. If you could confirm the distributed list where you received this email, we can match that with the emails configured 
+Me (10/8/2025, 10:57:50 AM): Standby 
+Me (10/8/2025, 11:03:10 AM): This is all I get from the email: 
+
+To: Undisclosed recipients:; 
+Me (10/8/2025, 11:03:33 AM): Date: Wed, 8 Oct 2025 16:00:04 +0000 (UTC)
+From: noreply@akamai.com
+Message-ID: <2133607181.6078.1759939204011@250b52e9b3f7>
+Subject: Edge DNS -- Edit Primary DNS Zone Record => New Event 
+Me (10/8/2025, 11:03:50 AM): The details of the entire email: 
+
+Received: from SA1P223MB0838.NAMP223.PROD.OUTLOOK.COM (2603:10b6:806:3cc::10)
+ by PH8P223MB0604.NAMP223.PROD.OUTLOOK.COM with HTTPS; Wed, 8 Oct 2025
+ 16:00:11 +0000
+Received: from BL0PR1501CA0005.namprd15.prod.outlook.com
+ (2603:10b6:207:17::18) by SA1P223MB0838.NAMP223.PROD.OUTLOOK.COM
+ (2603:10b6:806:3cc::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9182.20; Wed, 8 Oct
+ 2025 16:00:08 +0000
+Received: from BL6PEPF0001AB72.namprd02.prod.outlook.com
+ (2603:10b6:207:17:cafe::c8) by BL0PR1501CA0005.outlook.office365.com
+ (2603:10b6:207:17::18) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9182.20 via Frontend Transport; Wed,
+ 8 Oct 2025 16:00:08 +0000
+Authentication-Results: spf=softfail (sender IP is 67.231.153.153)
+ smtp.mailfrom=akamai.com; dkim=fail (body hash did not verify)
+ header.d=akamai.com;dmarc=fail action=none
+ header.from=akamai.com;compauth=pass reason=116
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ akamai.com discourages use of 67.231.153.153 as permitted sender)
+Received: from mx0b-001a5c01.pphosted.com (67.231.153.153) by
+ BL6PEPF0001AB72.mail.protection.outlook.com (10.167.242.165) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9203.9 via Frontend Transport; Wed, 8 Oct 2025 16:00:07 +0000
+Received: from pps.filterd (m0099311.ppops.net [127.0.0.1])
+	by mx0b-001a5c01.pphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 598BtDI5018420
+	for <IT.ECommerceOps@basspro.com>; Wed, 8 Oct 2025 11:00:07 -0500
+Authentication-Results-Original: ppops.net;	spf=pass
+ smtp.mailfrom=noreply@akamai.com;	dkim=pass header.d=akamai.com
+ header.s=jan2016.eng;	dmarc=pass header.from=akamai.com
+Received: from pps.reinject (localhost [127.0.0.1])
+	by mx0b-001a5c01.pphosted.com (PPS) with ESMTPS id 49k0kbc8jf-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <IT.ECommerceOps@basspro.com>; Wed, 08 Oct 2025 11:00:07 -0500 (CDT)
+Received: from m0099311.ppops.net (m0099311.ppops.net [127.0.0.1])
+	by pps.reinject (8.18.1.12/8.18.0.8) with ESMTP id 598G07GF028590
+	for <IT.ECommerceOps@basspro.com>; Wed, 8 Oct 2025 11:00:07 -0500
+Received: from mx0a-00190b01.pphosted.com (mx0a-00190b01.pphosted.com [67.231.149.131])
+	by mx0b-001a5c01.pphosted.com (PPS) with ESMTPS id 49k0kbc8jc-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Wed, 08 Oct 2025 11:00:06 -0500 (CDT)
+Received: from pps.filterd (m0122332.ppops.net [127.0.0.1])
+	by mx0a-00190b01.pphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 598B6mhC003659;
+	Wed, 8 Oct 2025 17:00:05 +0100
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=akamai.com; h=
+	content-type:date:from:message-id:mime-version:subject; s=
+	jan2016.eng; bh=uKiUUQHT2my8LA6bc2JhSW/rxZRmj5wkA9HfUHqA9eE=; b=
+	jPMmLXGFg3z9HymU6FKTkKEmFgmFHOEjlAX159g2hUoDv9cu+ZVWAIOeEN05rE/a
+	D2HvMaBE5XoGa6SC4zZg5JkPS820GJo1w14IwnrWuyE3y4FSkbwqrxVgIt9hcY5G
+	Lqf1NHSrnGKHZJkqb0qQd103tRwslQDLAWG5bvB0TJek5uPMqX8KarG6ekQq7rg8
+	PRIDMfGlnFSwokW9RbTWPMNXlp5SzOVHZo5SWVewHIT5vIwXScOHLgBOkmOc/fM/
+	6dBFLlSChYQNQCkw7l/RdewZ0u7sLQ0pVDn/EswQ3DYqHm3TyqYGSGHSehdz+npD
+	odMASedaYEreCe1o3EbIEA==
+Received: from prod-mail-ppoint8 (a72-247-45-34.deploy.static.akamaitechnologies.com [72.247.45.34] (may be forged))
+	by mx0a-00190b01.pphosted.com (PPS) with ESMTPS id 49jumn7gv6-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Wed, 08 Oct 2025 17:00:05 +0100 (BST)
+Received: from pps.filterd (prod-mail-ppoint8.akamai.com [127.0.0.1])
+	by prod-mail-ppoint8.akamai.com (8.18.1.2/8.18.1.2) with ESMTP id 598CijDU029809;
+	Wed, 8 Oct 2025 12:00:04 -0400
+Received: from 250b52e9b3f7 (a23-209-105-154.deploy.static.akamaitechnologies.com [23.209.105.154])
+	by prod-mail-ppoint8.akamai.com (PPS) with ESMTPS id 49jxwvw9jq-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Wed, 08 Oct 2025 12:00:04 -0400
+Date: Wed, 8 Oct 2025 16:00:04 +0000 (UTC)
+From: noreply@akamai.com
+Message-ID: <2133607181.6078.1759939204011@250b52e9b3f7>
+Subject: Edge DNS -- Edit Primary DNS Zone Record => New Event
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6076_94448290.1759939203616"
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1117,Hydra:6.1.9,FMLib:17.12.80.40
+ definitions=2025-10-08_05,2025-10-06_01,2025-03-28_01
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 mlxlogscore=387 bulkscore=0 mlxscore=0
+ malwarescore=0 adultscore=0 phishscore=0 spamscore=0 suspectscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2509150000
+ definitions=main-2510080111
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1117,Hydra:6.1.9,FMLib:17.12.80.40
+ definitions=2025-10-08_05,2025-10-06_01,2025-03-28_01
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 clxscore=1015
+ phishscore=0 lowpriorityscore=0 priorityscore=1501 adultscore=0
+ impostorscore=0 bulkscore=0 spamscore=0 suspectscore=0 malwarescore=0
+ classifier=typeunknown authscore=0 authtc= authcc= route=outbound adjust=0
+ reason=mlx scancount=1 engine=8.19.0-2510020000 definitions=main-2510040025
+X-Proofpoint-ORIG-GUID: -lty2Mg_aD0SmjiI5GVO4LvEEHTVcJzD
+X-Proofpoint-GUID: -lty2Mg_aD0SmjiI5GVO4LvEEHTVcJzD
+X-CLX-Shades: MLX
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjUxMDA0MDA3NyBTYWx0ZWRfXyaXBThoq6Kgj
+ tXuTrLgDoeCQbYiF/IS3pXWTpYjvY8ubCHLoW0Nkxeaqu8pYwsL29YSk1qpybgoPz0fPonaaShx
+ tzN/vpd/pS3YR4hBkp+TzXz3Y3hrx5FnhwrQ4fJrpgbVqy+17G+ERv38a0OJp4wqiTNoQKEaa+E
+ w0ZZkWiSFm9J7icS1ngVGSmGrgBjaxQ707ANtpXNNrFc7z6z5DnMA2sV7gDHkYb2fUOveuEzyHH
+ TvsIP5nAwleBLa2Ghil0y9QBZ3wWKJ0IbBY+iTdZxe7ICashhrSL39pxpAvBjvqIl0p238aMEsc
+ OAebXuS9MpLZ0J47X7n5CUcUc5n/lQGmg9qJq6xdGGjCUpYKYRUFCoGFKCfyx9caGb9CF2D8I97
+ fLLjSbI2xw9EloHYzSQ3evjB/jmLjAhG9sls7VDgUH7k6fh0De9pU1w+7vGAmC2EvpiYk8yLUo4
+ /NbAKooCnlsDbxE9B5A==
+X-CLX-Response: 1TFkXHh0 
+Me (10/8/2025, 11:05:59 AM): Be back in 5 minutes. 
+Niraj Kumar (10/8/2025, 11:08:10 AM): Ok so you cannot see the email where this alert is being received. Is there anyone from your team who can help us with this info? 
+Me (10/8/2025, 11:11:03 AM): I can see the email. 
+Me (10/8/2025, 11:11:14 AM): I cannot find where to edit the alert that sends it. 
+Me (10/8/2025, 11:11:54 AM): We are receiving too many emails, and we're looking to eliminate 'informative' emails. 
+Niraj Kumar (10/8/2025, 11:15:22 AM): I can see the email.
+>> could you confirm the email ID. I see it as "To: Undisclosed recipients:;"
+
+Also, I don't see any specific configuration for the EDNS zone activation alert email configuration. 
+
+We are receiving too many emails, and we're looking to eliminate 'informative' emails.
+>> We can work on this with the accounts team and help you in reducing the number of emails sent to you, and which is not very important for you 
+Me (10/8/2025, 11:15:49 AM): I can reach out to them also. Have a nice day. 

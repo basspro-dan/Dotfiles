@@ -1,0 +1,65 @@
+terraform {
+  required_version = ">= 1.0"
+  required_providers {
+    akamai = {
+      source  = "akamai/akamai"
+      version = ">= 9.0.0"
+    }
+  }
+  backend "azurerm" {
+    subscription_id      = "1c6cd62a-5175-4ae7-a655-a524541b2cb9"
+    resource_group_name  = "tstate"
+    storage_account_name = "tstate19401"
+    container_name       = "akamai"
+    key                  = "cabel_as.tfstate" ## <--- Change this value to reflect the domain name. 
+    access_key           = "9AU37jO2oJK/i3Yo/f0wT2aAUbHlGaoB7omjLb/LnEKw8dtKzeaKq2FHswb5SmgnXF26nw3VM/nWZsvcwHRBPQ=="
+  }
+}
+
+
+
+
+
+
+### New Import. 
+
+../scripts/make-import-scripts.sh cabel.as
+ vim cabel.as/cabel_as.tf
+ ( Copy provider block above, OVER the original 9 lines at the top of the .tf file ) 
+ ( After pasting the provider block, edit line 14 to reflect the domain anme. using and underscore instead of the dot. _
+ ( Save ) 
+tf init
+
+ ( It will ask if you want to import. Type yes and continue. ) 
+
+Done, The domain you worked on now has it's state stored in Azure. Json files may be safely deleted. 
+
+
+
+###
+
+From	
+Charles.Shoults@cabelas.com
+Sent On	
+2025-11-10 11:19:22
+Subject	
+Password set for dmcsvc for 
+
+From Charles: 
+slpd84wcld01/02
+slpd87wcld01/02
+
+From Chandra: 
+slpd84wcld01
+slpd84wcld02
+		
+Message	
+Username: dmcsvc
+Password: BCLQaGm7qi76F268u0tVn7mchz7yJDb/uX7x+NSuGDYaW1xUDrovhD25sUfn0mD7
+
+DB2_HOST: ${{ secrets.DB2_HOST }}
+DB2_PORT: ${{ secrets.DB2_PORT }}
+DB2_DATABASE: ${{ secrets.DB2_DATABASE }}
+DB2_USERNAME: ${{ secrets.DB2_USERNAME }}
+DB2_PASSWORD: ${{ secrets.DB2_PASSWORD }}
+
