@@ -1,5 +1,0 @@
-[default]
-client_secret = qiLsyMDpxW33vATkn5S4jZt8htgbxjBfXitJt72UxPA=
-host = akab-wa35462znr7ic2i2-bg45vi5tkmtzuv5v.luna.akamaiapis.net
-access_token = akab-jnxclxe74zxw7bcj-t243kkpm2tgjzlru
-client_token = akab-a26a7546eo6euol6-gpssno2s7yxu2oet

@@ -1,8 +1,0 @@
-for host in $(grep -vE '^\[|^#|^$' basspro_inventory | awk '{print $1}'); do
-  ssh danibaker@$host -n hostname
-done
-
-
- docker run -i --volume ~/workdir:/root/Basspro --volume ~/.edgerc:/root/.edgerc:ro -t $(docker images -aq)
-
-echo '{"channel": "youtube", "profile_type": "video", "member_key": "hello"}' | jq '{channel: (.profile_type + "." + .channel)}'
