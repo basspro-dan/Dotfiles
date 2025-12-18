@@ -120,6 +120,9 @@ ${StatD}${OFF}"
 
 PROMPT_COMMAND=MyPrompt
 
+
+export PATH="$PATH:/home/danibaker/bin"
+
 ## Add Later
 
 # Yellow and middle brackets for Linux Signal Traps
