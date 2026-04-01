@@ -3,6 +3,7 @@
 # Tell Github who we are.
 git config --local user.name "Daniel Baker"
 git config --local user.email "danibaker@basspro.com"
+git config pull.rebase true
 
 # Install Latest version of Terraform
 tfswitch -u
