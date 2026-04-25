@@ -26,6 +26,7 @@ alias gca='gcm; gfa'
 alias gfa='git fetch --all && git pull'
 alias gsh='git stash'
 alias gsp='git stash pop'
+alias gcp='gaa ; git commit ; gpob'
 
 # Docker
 alias dps='docker ps -a'

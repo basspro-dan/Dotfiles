@@ -6,9 +6,8 @@
 ## Remove .gitconfig -> Link to gitcomfig in Cli-foo
 ## Linx ~/Dotfiles/Bin -> ~/bin folder and copy 
 
-
+# Doing anything with Akamai?
 echo "[default]" > ~/.edgerc
-
 client_secret=$(env | grep 'client_secret' | gawk -F= '{print $3}') && echo "client_secret="$client_secret"=" >> ~/.edgerc
 host=$(env | grep 'host' | gawk -F= '{print $2}') && echo "host="$host >> ~/.edgerc
 access_token=$(env | grep 'access_token' | gawk -F= '{print $2}') && echo "access_token="$access_token >> ~/.edgerc
@@ -46,8 +45,3 @@ source  ~/.bashrc
 # curl https://pyenv.run | bash << Dafuq is this? 
 pip3 install psutil --quiet
 
-
-
-
-## Add Compile Function for cmatrix and nmon
-## Add to Bashrc : Check for code changes to push everyting you login. 
