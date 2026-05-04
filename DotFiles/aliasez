@@ -24,7 +24,7 @@ alias gaa='git add . -A ; gss'
 alias gcm='git checkout $( git symbolic-ref refs/remotes/origin/HEAD | cut -d / -f4 ) ;  gfa'
 alias gca='gcm; gfa'
 alias gfa='git fetch --all && git pull'
-alias gsh='git stash'
+alias gsh='git stash ; gss'
 alias gsp='git stash pop'
 alias gcp='gaa ; git commit ; gpob'
 
