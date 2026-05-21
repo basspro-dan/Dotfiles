@@ -12,7 +12,6 @@ cd $ORG
 NAMES=($(find . -mindepth 1 -maxdepth 1 -type d -exec basename {} \;))
 for NAME in "${NAMES[@]}" ; do                   # Set up our loop. 
 echo "Processing : $NAME"
-git checkout $( git symbolic-ref refs/remotes/origin/HEAD | cut -d / -f4 )
 cd $NAME
 git checkout $( git symbolic-ref refs/remotes/origin/HEAD | cut -d / -f4 )
 git fetch --all && git pull
