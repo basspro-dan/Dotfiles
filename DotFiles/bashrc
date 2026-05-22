@@ -42,10 +42,10 @@ function MyPrompt {
         BPID=$$ ## Bash Process ID. Good for killing another pane w/out using tmux commands.
 
         PyEnv="NaN"
-        if [ 'command -v pyenv' ]
-          then
-            PyEnv=$(pyenv versions | grep '*' | awk '{print $2}')
-        fi
+#        if [ 'command -v pyenv' ]
+#          then
+#            PyEnv=$(pyenv versions | grep '*' | awk '{print $2}')
+#        fi
 
         CPU="Nan"
         if [ $PyEnv != '' ]
@@ -82,8 +82,10 @@ function MyPrompt {
         then VB="{"; VE="}" 
         else VB="["; VE="]"
         fi
+
+        Env=$(curl -s wttr.in?format=3 | gawk '{ print $5 }')
        
-        SEPARATORHORIZONTAL="${RED}:${WHITE}PID${YELLOW}=${CYAN}${BPID}${RED}:${WHITE}C${YELLOW}=${CYAN}${CPU}${RED}:${WHITE}R${YELLOW}=${CYAN}${RAM}${RED}:${WHITE}E${YELLOW}=${CYAN}${EXITStatus}${RED}:${WHITE}Py${YELLOW}=${CYAN}$PyEnv${RED}:"
+        SEPARATORHORIZONTAL="${RED}:${WHITE}PID${YELLOW}=${CYAN}${BPID}${RED}:${WHITE}C${YELLOW}=${CYAN}${CPU}${RED}:${WHITE}R${YELLOW}=${CYAN}${RAM}${RED}:${WHITE}E${YELLOW}=${CYAN}${EXITStatus}${RED}:${WHITE}T${YELLOW}=${CYAN}$Env${RED}:"
         SlashN="\n"
         VertSep="${WHITE}|"
         UserHost="${UID_COLOR}\u${MAGENTA} @ ${UID_COLOR}\h"
