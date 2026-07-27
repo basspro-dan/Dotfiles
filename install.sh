@@ -17,7 +17,7 @@ client_token=$(env | grep 'client_token' | gawk -F= '{print $2}') && echo "clien
 # client_secret: ${{ secrets.client_secret }}
 # Fix Git config local vars so I don't have to tell github who I am when pushing code up in a codespace. 
 
-git clone https://github.com/basspro-dan/Dotfiles.git ~/Dotfiles 
+#git clone https://github.com/basspro-dan/Dotfiles.git ~/Dotfiles 
 
 [[ -f ~/.bashrc ]] && rm -f ~/.bashrc
 ln -s ~/Dotfiles/DotFiles/bashrc ~/.bashrc
@@ -43,5 +43,5 @@ source  ~/.bashrc
 # pyenv install 3.11.5
 # pyenv global 3.11.5 
 # curl https://pyenv.run | bash << Dafuq is this? 
-pip3 install psutil --quiet
+#pip3 install psutil --quiet
 
