@@ -164,3 +164,6 @@ export NVM_DIR="$HOME/.nvm"
 
 ## For CoPilot CLI
 export PATH="/home/danibaker/.local/bin:$PATH"
+
+## To make directory listings use Yellow ( for dark brackgrounds ) 
+export LS_COLORS="$LS_COLORS:di=01;33"
