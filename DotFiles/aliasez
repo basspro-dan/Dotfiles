@@ -45,7 +45,7 @@ alias kk='kubectl'
 alias tf='terraform'
 
 # Ansible
-alias anping='ansible -i ~/danz-PROD-inventory.txt -m ping all | awk '\''/UNREACHABLE/ {print $1; found=1} END {if (!found) print "\033[32mAll servers accessible\033[0m"}'\'''
+alias anping='ansible -i ~/ans-inventory.txt -m ping all | awk '\''/UNREACHABLE/ {print $1; found=1} END {if (!found) print "\033[32mAll servers accessible\033[0m"}'\'''
 
 
 # AWS
