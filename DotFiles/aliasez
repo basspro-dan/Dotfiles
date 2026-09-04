@@ -53,3 +53,6 @@ alias awz='. ~/Authz/awscreds.sh $1'
 
 # Azure
 alias azl='az login --use-device-code'
+
+# Becuase FUCK CAPS LOCK
+alias she='/home/blayde/Bin/set-hard-envs.sh'

@@ -82,7 +82,7 @@ function MyPrompt {
         else VB="["; VE="]"
         fi
 
-        Env=$(curl -s wttr.in?format=3 | gawk '{ print $5 }')
+#        Env=$(curl -s wttr.in?format=3 | gawk '{ print $5 }')
        
         SEPARATORHORIZONTAL="${RED}:${WHITE}PID${YELLOW}=${CYAN}${BPID}${RED}:${WHITE}C${YELLOW}=${CYAN}${CPU}${RED}:${WHITE}R${YELLOW}=${CYAN}${RAM}${RED}:${WHITE}E${YELLOW}=${CYAN}${EXITStatus}${RED}:${WHITE}Py=${YELLOW}${CYAN}$PyEnv${RED}:"
         SlashN="\n"
@@ -158,9 +158,9 @@ export PATH="$PATH:/home/danibaker/bin"
 
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ## For CoPilot CLI
 export PATH="/home/danibaker/.local/bin:$PATH"
