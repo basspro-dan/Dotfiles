@@ -71,3 +71,4 @@ set softtabstop=2
 
 syntax on
 filetype indent on
+nnoremap <leader>gc :%s/^;/ --> /g<CR>

@@ -18,15 +18,19 @@ alias vd='vagrant destroy -f'
 alias vu='vagrant up'
 
 # Git
+# because the dafault git branch can be litterally anything. Git checkout Main and pull. 
+alias gcm='git checkout $( git symbolic-ref refs/remotes/origin/HEAD | cut -d / -f4 ) ;  gfa'
+# Set Github name, email, etc. Set tfswitch.
+alias 1='1st.sh'
 alias gss='cls ; git status'
 alias gaa='git add . -A ; gss'
-# because the dafault git branch can be litterally anything: 
-alias gcm='git checkout $( git symbolic-ref refs/remotes/origin/HEAD | cut -d / -f4 ) ;  gfa'
 alias gca='gcm; gfa'
 alias gfa='git fetch --all && git pull'
 alias gsh='git stash ; gss'
 alias gsp='git stash pop'
-alias gcp='gaa ; git commit ; gpob'
+alias gcp='gaa ; git commit ; gpo'
+alias ghh='export GITHUB_TOKEN="" ; gh auth login'
+alias gpo='git push origin $GitB'
 
 # Docker
 alias dps='docker ps -a'
@@ -34,9 +38,6 @@ alias dsac='docker stop $(docker ps -a -q)'
 alias drmac='docker rm $(docker ps -a -q)'
 alias dd='docker rmi $(docker image list -q)'
 alias dnuke='dsac; drmac; dd'
-alias 1='1st.sh'
-alias ghh='export GITHUB_TOKEN="" ; gh auth login'
-alias gpob='git push origin $GitB'
 
 # Kubernetes
 alias kk='kubectl' 
