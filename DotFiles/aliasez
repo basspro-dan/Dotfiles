@@ -54,5 +54,7 @@ alias awz='. ~/Authz/awscreds.sh $1'
 # Azure
 alias azl='az login --use-device-code'
 
+# [ System ]
 # Becuase FUCK CAPS LOCK
 alias she='/home/blayde/Bin/set-hard-envs.sh'
+alias driverz='software-properties-gtk --open-tab=4'
