@@ -38,6 +38,9 @@ alias drmac='docker rm $(docker ps -a -q)'
 alias dd='docker rmi $(docker image list -q)'
 alias dnuke='dsac; drmac; dd'
 
+# Effing java.
+alias nrb='npm run build'
+
 # Kubernetes
 alias kk='kubectl' 
 
