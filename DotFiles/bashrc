@@ -96,21 +96,22 @@ function MyPrompt {
         DispMinSuffix="\D{%M} \D{%p}"
         WorkDir="${WHITE} \w"
 
-        if [ ${EXITStatus} -ge 129 ]
-        then StatA="${RED}${VB}${DispDy}${RED}${VE}${VertSep} ${UserHost}"
-        else StatA=" ${DispDy} ${VertSep} ${UserHost}"
-        fi
-
-        if [ ${EXITStatus} -ge 1 ] && [ ${EXITStatus} -le 128 ]
-        then StatB="${YELLOW}${VB}${DispMn}${YELLOW}${VE}${VertSep} ${CYAN}Time: ${DispHr}${CYAN}:${DispMinSuffix}"
-        else StatB=" ${DispMn} ${VertSep} ${DispTime}"
-        fi
+      if (( EXITStatus == 0 )); then
+          StatA=" ${DispDy} ${VertSep} ${UserHost}"
+          StatB=" ${DispMn} ${VertSep} ${DispTime}"
+          StatC="${GREEN}${VB}${DispYr}${GREEN}${VE}${VertSep} ${WorkDir}"
+      
+      elif (( EXITStatus <= 128 )); then
+          StatA=" ${DispDy} ${VertSep} ${UserHost}"
+          StatB="${YELLOW}${VB}${DispMn}${YELLOW}${VE}${VertSep} ${CYAN}Time: ${DispHr}${CYAN}:${DispMinSuffix}"
+          StatC=" ${DispYr} ${VertSep}${WorkDir}"
+      
+      else
+          StatA="${RED}${VB}${DispDy}${RED}${VE}${VertSep} ${UserHost}"
+          StatB=" ${DispMn} ${VertSep} ${DispTime}"
+          StatC=" ${DispYr} ${VertSep}${WorkDir}"
+      fi
         
-        if [ ${EXITStatus} == 0 ]
-        then StatC="${GREEN}${VB}${DispYr}${GREEN}${VE}${VertSep} ${WorkDir}"
-        else StatC=" ${DispYr} ${VertSep}${WorkDir}"
-        fi
-
         StatD="${GREEN}${GitB} ${WHITE}:] "
         
 ## Put it all together. 
