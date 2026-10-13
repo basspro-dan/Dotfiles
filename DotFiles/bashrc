@@ -96,13 +96,13 @@ function MyPrompt {
         DispMinSuffix="\D{%M} \D{%p}"
         WorkDir="${WHITE} \w"
 
-        if [ ${EXITStatus} != 0 ]
+        if [ ${EXITStatus} -ge 129 ]
         then StatA="${RED}${VB}${DispDy}${RED}${VE}${VertSep} ${UserHost}"
         else StatA=" ${DispDy} ${VertSep} ${UserHost}"
         fi
 
         if [ ${EXITStatus} -ge 1 ] && [ ${EXITStatus} -le 128 ]
-        then StatB=" ${DispMn} ${VertSep} ${CYAN}Time: ${YELLOW}${VB}${DispHr}${YELLOW}${VE}${CYAN}:${DispMinSuffix}"
+        then StatB="${YELLOW}${VB}${DispMn}${YELLOW}${VE}${VertSep} ${CYAN}Time: ${DispHr}${CYAN}:${DispMinSuffix}"
         else StatB=" ${DispMn} ${VertSep} ${DispTime}"
         fi
         
