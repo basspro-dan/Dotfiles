@@ -26,6 +26,10 @@ if [ -f ~/Dotfiles/DotFiles/aliasez ]; then
         . ~/Dotfiles/DotFiles/aliasez
 fi
 
+if [ -d "$HOME/.local/bin" ] ; then
+ PATH="$HOME/.local/bin:$PATH"
+fi
+
 export VISUAL=vim
 
 #export PYENV_ROOT="$HOME/.pyenv"
@@ -168,3 +172,6 @@ export PATH="/home/danibaker/.local/bin:$PATH"
 
 ## To make directory listings use Yellow ( for dark brackgrounds ) 
 export LS_COLORS="$LS_COLORS:di=01;33"
+
+
+## // EOF //
