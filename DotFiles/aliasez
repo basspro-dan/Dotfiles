@@ -31,6 +31,10 @@ alias gcp='gaa ; git commit ; gpo'
 alias ghh='export GITHUB_TOKEN="" ; gh auth login'
 alias gpo='git push origin $GitB'
 
+# Git ~ Repo Maint.
+alias rpm='repo-maint.sh'
+alias rca='repo-clonez.sh'
+
 # Docker
 alias dps='docker ps -a'
 alias dsac='docker stop $(docker ps -a -q)'
@@ -59,5 +63,5 @@ alias azl='az login --use-device-code'
 
 # [ System ]
 # Becuase FUCK CAPS LOCK
-alias she='/home/blayde/Bin/set-hard-envs.sh'
+alias she='~/Bin/set-hard-envs.sh'
 alias driverz='software-properties-gtk --open-tab=4'
