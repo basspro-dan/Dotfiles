@@ -27,7 +27,7 @@ alias gaa='git add . -A ; gss'
 alias gfa='git fetch --all && git pull'
 alias gsh='git stash ; gss'
 alias gsp='git stash pop'
-alias gcp='gaa ; git commit ; gpo'
+alias gcp='gaa ; git commit --trailer "=-=-=-=-=-="; gpo'
 alias ghh='export GITHUB_TOKEN="" ; gh auth login'
 alias gpo='git push origin $GitB'
 
