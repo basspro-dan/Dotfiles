@@ -45,10 +45,11 @@ function MyPrompt {
         BPID=$$ ## Bash Process ID. Good for killing another pane w/out using tmux commands.
 
         PyEnv="NaN"
-#        if [ 'command -v pyenv' ]
-#          then
-#            PyEnv=$(pyenv versions | grep '*' | awk '{print $2}')
-#        fi
+        if command -v python3 >/dev/null
+          then
+            PyEnv=$(python3 -V 2>&1)
+            PyEnv=${PyEnv#Python }
+        fi
 
         CPU="NaN"
         if command -v python3 >/dev/null
