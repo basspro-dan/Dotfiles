@@ -51,13 +51,13 @@ function MyPrompt {
 #        fi
 
         CPU="NaN"
-        if [ 'command -v pyenv' ]
+        if command -v python3 >/dev/null
          then
             CPU=$(python3 ~/Bin/Py-Stat-CPU.py)
         fi
         
         RAM='NaN'
-        if [ 'command -v pyenv' ]
+        if command -v python3 >/dev/null
           then
             RAM=$(python3 ~/Bin/Py-Stat-RAM.py)
         fi
