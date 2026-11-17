@@ -88,7 +88,7 @@ function MyPrompt {
 
 #        Env=$(curl -s wttr.in?format=3 | gawk '{ print $5 }')
        
-        SEPARATORHORIZONTAL="${RED}:${WHITE}PID${YELLOW}=${CYAN}${BPID}${RED}:${WHITE}C${YELLOW}=${CYAN}${CPU}${RED}:${WHITE}R${YELLOW}=${CYAN}${RAM}${RED}:${WHITE}E${YELLOW}=${CYAN}${EXITStatus}${RED}:${WHITE}Py=${YELLOW}${CYAN}$PyEnv${RED}:"
+        SEPARATORHORIZONTAL="${RED}:${WHITE}PID${YELLOW}=${CYAN}${BPID}${RED}:${WHITE}C${YELLOW}=${CYAN}${CPU}%${RED}:${WHITE}R${YELLOW}=${CYAN}${RAM}%${RED}:${WHITE}E${YELLOW}=${CYAN}${EXITStatus}${RED}:${WHITE}Py=${YELLOW}${CYAN}$PyEnv${RED}:"
         SlashN="\n"
         VertSep="${WHITE}|"
         UserHost="${UID_COLOR}\u${MAGENTA} @ ${UID_COLOR}\h"
@@ -131,10 +131,6 @@ ${StatD}${OFF}"
 
 PROMPT_COMMAND=MyPrompt
 
-## Add Later
-
-# Yellow and middle brackets for Linux Signal Traps
-
 ################
 #### Legend ####
 
@@ -157,7 +153,7 @@ PROMPT_COMMAND=MyPrompt
 
 ### TODO
 # Change got branch name to red on uncommited changed
-
+# List Number of changes to commit.
 
 
 export NVM_DIR="$HOME/.nvm"
